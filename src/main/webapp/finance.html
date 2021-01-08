@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="finance.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    
+<nav class="navbar navbar-dark bg-primary justify-content-between">
+  <a class="navbar-brand"></a>
+  <form class="form-inline" onsubmit="return redirect()">
+    <!-- <button class="btn btn-dark my-2 my-sm-0" type="submit">Login</button> -->
+    <button class="btn btn-dark my-2 my-sm-0" type="submit">Logout</button>
+  </form>
+</nav>
+
+
+    <div class="container">
+        <div class="manager">
+    <h3> Welcome Finance Manager</h3>
+
+    <h4>View  ALL Reimbursment Request</h4>
+    
+    <table class="table" id="customers">
+    <label for="status">Filter Request By Status: </label>
+
+    <select id="status" name="ReimbursementStatus" onchange="filterReimb()">
+        <option value="0">All</option>
+      <option value="2">Pending</option>
+      <option value="1">Approved</option>
+      <option value="3">Denied</option>
+      
+    </select>    
+    
+
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Reimburstment Type</th>
+                <th>Amount</th>
+                <th>status</th>
+                <th colspan="2">Action</th>
+
+            </tr>
+
+        </thead>
+        <tbody>
+            <!-- for loop (Todos todo : todos)-->
+            <tr>
+                <td>1</td>
+                <td>Ravi</td>
+                <td>Dodiya</td>
+                <td>Food</td>
+                <td>20</td>
+                <td>pending</td>
+                <td><button   class="btn btn-success">Approve</button></td>
+                <td><button  class="btn btn-danger">Deny</button></td>
+                
+                
+                
+                
+                
+
+            </tr>
+             <tr>
+                <td>2</td>
+                <td>Shubham</td>
+                <td>Bangade</td>
+                <td>Travel</td>
+                <td>55</td>
+                <td>pending</td>
+                <td><button  class="btn btn-success">Approve</button></td>
+                <td><button   class="btn btn-danger">Deny</button></td>
+                
+                
+                
+                
+                
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ravi</td>
+                <td>Dodiya</td>
+                <td>Food</td>
+                <td>20</td>
+                <td>pending</td>
+                <td><button   class="btn btn-success">Approve</button></td>
+                <td><button   class="btn btn-danger">Deny</button></td>
+                
+                
+                
+                
+                
+
+            </tr>
+             <tr>
+                <td>2</td>
+                <td>Shubham</td>
+                <td>Bangade</td>
+                <td>Travel</td>
+                <td>55</td>
+                <td>pending</td>
+                <td><button   class="btn btn-success">Approve</button></td>
+                <td><button   class="btn btn-danger">Deny</button></td>
+                
+                
+                
+                
+                
+
+            </tr>
+
+        </tbody>
+
+    </table>
+    
+    
+    </div>
+</div>    
+    
+<script src="./finance.js"></script>
+</body>
+</html>
